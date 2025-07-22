@@ -1,11 +1,11 @@
 
-# 📊 Customer Churn Analysis – SQL, Python, Power BI & Docker
+# Customer Churn Analysis – SQL, Python, Power BI & Docker
 
 This end-to-end project focuses on analyzing customer churn behavior using real-world business questions, cleaning and transforming data with SQL (PostgreSQL via DBeaver), applying machine learning models in Python, and visualizing key insights using Power BI. The project also includes Docker compatibility for environment replication.
 
 ---
 
-## 🚀 Project Objectives
+## Project Objectives
 
 - Understand the distribution of customers by gender, contract type, and geography.
 - Identify revenue contribution from different customer segments.
@@ -15,7 +15,7 @@ This end-to-end project focuses on analyzing customer churn behavior using real-
 
 ---
 
-## 🧰 Tools & Technologies
+## Tools & Technologies
 
 - **SQL (PostgreSQL via DBeaver)**
 - **Python (VS Code, pandas, scikit-learn, matplotlib)**
@@ -25,7 +25,7 @@ This end-to-end project focuses on analyzing customer churn behavior using real-
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 CHURN_ANALYSIS/
@@ -60,7 +60,7 @@ CHURN_ANALYSIS/
 
 ---
 
-## 📌 Key Business Questions Solved
+## Key Business Questions Solved
 
 > See full details in: [`docs/customer_churn_analysis(SQL).pdf`](docs/customer_churn_analysis(SQL).pdf)
 
@@ -72,7 +72,7 @@ CHURN_ANALYSIS/
 
 ---
 
-## 🧹 Data Cleaning & Transformation (SQL)
+## Data Cleaning & Transformation (SQL)
 
 - NULL handling using `COALESCE()`
 - Creation of `prod_churn` table
@@ -82,7 +82,7 @@ CHURN_ANALYSIS/
 
 ---
 
-## 🤖 Machine Learning Model (Python)
+## Machine Learning Model (Python)
 
 Implemented in: [`notebooks/churn_model_and_prediction.ipynb`](notebooks/churn_model_and_prediction.ipynb)
 
@@ -102,7 +102,7 @@ Implemented in: [`notebooks/churn_model_and_prediction.ipynb`](notebooks/churn_m
 
 ---
 
-## 📈 Dashboard (Power BI)
+## Dashboard (Power BI)
 
 📁 File: [`Customer_Churn_Analysis.pbix`](Dashboard/Customer_Churn_Analysis.pbix)
 
@@ -110,11 +110,11 @@ Implemented in: [`notebooks/churn_model_and_prediction.ipynb`](notebooks/churn_m
 - Visuals: Gender, Contract Type, State, Churn Rate
 - Slicers and dynamic interactions
 
-➡️ **Live Dashboard Link**: [View on Power BI](https://app.powerbi.com/groups/me/reports/7cb18420-67ea-47e7-85e6-21cf71399856/52f511e0d028d690872b?experience=power-bi)
+➡️ **Live Dashboard Link**: [View on Power BI](https://app.powerbi.com/view?r=eyJrIjoiNzQ1Yjk1YmUtZTU4OC00OThjLWE2NjUtYjE0NDgyMDhjMzI2IiwidCI6ImI2NDE3Y2QwLTFmNzMtNDQ3MS05YTM5LTIwOTUzODIyYTM0YSIsImMiOjN9)
 
 ---
 
-## 🐳 Docker (Optional Setup)
+## Docker (Optional Setup)
 
 To enable reproducibility using Docker, create the following `Dockerfile`:
 
@@ -148,7 +148,7 @@ docker run -p 8888:8888 churn-analysis
 
 ---
 
-## ✅ Results & Insights
+## Results & Insights
 
 - **Stayed customers** contribute 82% of total revenue.
 - **Churned customers** made up 17.5% revenue before exit.
@@ -157,7 +157,7 @@ docker run -p 8888:8888 churn-analysis
 
 ---
 
-## 📚 Learnings
+## Learnings
 
 - End-to-end business pipeline design
 - SQL for data prep + Python for ML + BI for storytelling
@@ -166,7 +166,7 @@ docker run -p 8888:8888 churn-analysis
 
 ---
 
-## 🤝 Credits & Contact
+## Credits & Contact
 
 Created by **Prabesh Rai**
 
@@ -175,7 +175,7 @@ Created by **Prabesh Rai**
 🐙 [GitHub](https://github.com/Prabesh789)
 
 ---
-## 📚 Acknowledgments
+## Acknowledgments
 
 This project was built as part of my self-learning journey.
 
