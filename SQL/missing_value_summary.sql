@@ -1,0 +1,37 @@
+-- Check for NULL values across all key columns in customer_data
+-- Useful for assessing data quality and planning cleaning steps
+
+SELECT
+    SUM(CASE WHEN "Customer_ID" IS NULL THEN 1 ELSE 0 END) AS customer_id_null_count,
+    SUM(CASE WHEN "Gender" IS NULL THEN 1 ELSE 0 END) AS gender_null_count,
+    SUM(CASE WHEN "Age" IS NULL THEN 1 ELSE 0 END) AS age_null_count,
+    SUM(CASE WHEN "Married" IS NULL THEN 1 ELSE 0 END) AS married_null_count,
+    SUM(CASE WHEN "State" IS NULL THEN 1 ELSE 0 END) AS state_null_count,
+    SUM(CASE WHEN "Number_of_Referrals" IS NULL THEN 1 ELSE 0 END) AS number_of_referrals_null_count,
+    SUM(CASE WHEN "Tenure_in_Months" IS NULL THEN 1 ELSE 0 END) AS tenure_in_months_null_count,
+    SUM(CASE WHEN "Value_Deal" IS NULL THEN 1 ELSE 0 END) AS value_deal_null_count,
+    SUM(CASE WHEN "Phone_Service" IS NULL THEN 1 ELSE 0 END) AS phone_service_null_count,
+    SUM(CASE WHEN "Multiple_Lines" IS NULL THEN 1 ELSE 0 END) AS multiple_lines_null_count,
+    SUM(CASE WHEN "Internet_Service" IS NULL THEN 1 ELSE 0 END) AS internet_service_null_count,
+    SUM(CASE WHEN "Internet_Type" IS NULL THEN 1 ELSE 0 END) AS internet_type_null_count,
+    SUM(CASE WHEN "Online_Security" IS NULL THEN 1 ELSE 0 END) AS online_security_null_count,
+    SUM(CASE WHEN "Online_Backup" IS NULL THEN 1 ELSE 0 END) AS online_backup_null_count,
+    SUM(CASE WHEN "Device_Protection_Plan" IS NULL THEN 1 ELSE 0 END) AS device_protection_plan_null_count,
+    SUM(CASE WHEN "Premium_Support" IS NULL THEN 1 ELSE 0 END) AS premium_support_null_count,
+    SUM(CASE WHEN "Streaming_TV" IS NULL THEN 1 ELSE 0 END) AS streaming_tv_null_count,
+    SUM(CASE WHEN "Streaming_Movies" IS NULL THEN 1 ELSE 0 END) AS streaming_movies_null_count,
+    SUM(CASE WHEN "Streaming_Music" IS NULL THEN 1 ELSE 0 END) AS streaming_music_null_count,
+    SUM(CASE WHEN "Unlimited_Data" IS NULL THEN 1 ELSE 0 END) AS unlimited_data_null_count,
+    SUM(CASE WHEN "Contract" IS NULL THEN 1 ELSE 0 END) AS contract_null_count,
+    SUM(CASE WHEN "Paperless_Billing" IS NULL THEN 1 ELSE 0 END) AS paperless_billing_null_count,
+    SUM(CASE WHEN "Payment_Method" IS NULL THEN 1 ELSE 0 END) AS payment_method_null_count,
+    SUM(CASE WHEN "Monthly_Charge" IS NULL THEN 1 ELSE 0 END) AS monthly_charge_null_count,
+    SUM(CASE WHEN "Total_Charges" IS NULL THEN 1 ELSE 0 END) AS total_charges_null_count,
+    SUM(CASE WHEN "Total_Refunds" IS NULL THEN 1 ELSE 0 END) AS total_refunds_null_count,
+    SUM(CASE WHEN "Total_Extra_Data_Charges" IS NULL THEN 1 ELSE 0 END) AS total_extra_data_charges_null_count,
+    SUM(CASE WHEN "Total_Long_Distance_Charges" IS NULL THEN 1 ELSE 0 END) AS total_long_distance_charges_null_count,
+    SUM(CASE WHEN "Total_Revenue" IS NULL THEN 1 ELSE 0 END) AS total_revenue_null_count,
+    SUM(CASE WHEN "Customer_Status" IS NULL THEN 1 ELSE 0 END) AS customer_status_null_count,
+    SUM(CASE WHEN "Churn_Category" IS NULL THEN 1 ELSE 0 END) AS churn_category_null_count,
+    SUM(CASE WHEN "Churn_Reason" IS NULL THEN 1 ELSE 0 END) AS churn_reason_null_count
+FROM customer_data;
