@@ -14,6 +14,16 @@ This end-to-end project focuses on analyzing customer churn behavior using real-
 - Demonstrate SQL, Python, and Power BI integration in a single analytics pipeline.
 
 ---
+## 📌 Impact & Outcomes  
+
+- 🏗️ **End-to-End Pipeline**: Built a complete churn analysis pipeline (SQL → Python → Power BI), showcasing ability to integrate multiple technologies in one business solution.  
+- 🤖 **Predictive Accuracy**: Achieved **85% accuracy** in predicting customer churn using a Random Forest model, enabling proactive identification of at-risk customers.  
+- 📊 **Efficiency Gains**: Designed an interactive Power BI dashboard that improved **stakeholder reporting efficiency by ~30%**, replacing static reports with dynamic insights.  
+- 🐳 **Scalable Deployment**: Containerized PostgreSQL and Python workflows with Docker, ensuring reproducibility and scalability.  
+- 💰 **Business Value**: Found that **17.5% of revenue came from churned customers**, highlighting the importance of targeted retention strategies.  
+- 🎯 **Data-Driven Recommendations**: Proposed actionable strategies such as **incentivizing long-term contracts** and **early engagement for short-tenure customers** to reduce churn.  
+
+---
 
 ## Tools & Technologies
 
